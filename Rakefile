@@ -150,7 +150,7 @@ end
 #
 def replace_version_number(new_version_number)
   text = File.read(podspec_path)
-  text.gsub!(/(s.version( )*= ")#{spec_version}(")/,
+  text.gsub!(/(spec.version( )*= ')#{spec_version}(')/,
               "\\1#{new_version_number}\\3")
   File.open(podspec_path, "w") { |file| file.puts text }
 end
