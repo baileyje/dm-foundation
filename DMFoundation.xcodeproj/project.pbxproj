@@ -93,6 +93,7 @@
 		35CDFC01F2D9B0A0103229C0 /* NSArray+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Functional.m"; sourceTree = "<group>"; };
 		35CDFCB42F32279C517784DC /* NSData+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Digest.m"; sourceTree = "<group>"; };
 		35CDFD43385BF19D6702441E /* NSArray+Derive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Derive.m"; sourceTree = "<group>"; };
+		35CDFE9CC8F3943D53A4A0C6 /* DMFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = DMFoundation.podspec; sourceTree = "<group>"; };
 		35CDFFB3E9ED24B0216B90BB /* NSString+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Digest.h"; sourceTree = "<group>"; };
 		35CDFFED7B12D508BCFF4A7C /* NSDictionary+Iterate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Iterate.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +128,7 @@
 				35CDF23B5E53426C790713B9 /* Classes */,
 				35CDF92BF37BE03160754FE6 /* Tests */,
 				35CDF2F8677CC8AACC946DD9 /* DMFoundation-Prefix.pch */,
+				35CDFE9CC8F3943D53A4A0C6 /* DMFoundation.podspec */,
 			);
 			sourceTree = "<group>";
 		};
