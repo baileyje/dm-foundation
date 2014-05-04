@@ -2,13 +2,14 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name = 'DMFoundation'
-  spec.version = '0.0.1'
+  spec.version = '0.0.2'
   spec.summary = 'A collection of utilities and enhancements to the iOS runtime environment.'
   spec.description = <<-DESC
     DMFoundation is a collection of category-based enhancements to the iOS Foundation classes
     to include iterators, formatters, digests, encoders, etc.
   DESC
-  spec.homepage = 'http://github.com/devmode/dm-foundation'
+  spec.homepage = 'http://devmode.com/projects/dm-foundation'
+  spec.documentation_url = 'http://devmode.com/projects/dm-foundation'
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
