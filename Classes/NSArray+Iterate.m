@@ -9,7 +9,7 @@
 }
 
 - (void)eachWithIndex:(DMIndexedTask)task {
-    int index = 0;
+    NSUInteger index = 0;
     for(id value in self) task(index++, value);
 }
 

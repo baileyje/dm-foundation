@@ -6,7 +6,7 @@
 
 static NSData* digest(NSData *data, unsigned char* (*algorithm)(const void*, CC_LONG, unsigned char*), CC_LONG length) {
     unsigned char digest[length];
-    algorithm(data.bytes, data.length, digest);
+    algorithm(data.bytes, (CC_LONG)data.length, digest);
     return [NSData dataWithBytes:digest length:length];
 }
 

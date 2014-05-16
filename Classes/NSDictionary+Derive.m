@@ -3,7 +3,7 @@
 @implementation NSDictionary (Derive)
 
 - (NSDictionary*)omit:(NSArray*)keys {
-    NSMutableDictionary* results = [NSMutableDictionary dictionaryWithCapacity:self];
+    NSMutableDictionary* results = [NSMutableDictionary dictionaryWithCapacity:self.count];
     for(id key in keys) [results removeObjectForKey:key];
     return [NSDictionary dictionaryWithDictionary:results];
 }

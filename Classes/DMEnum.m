@@ -4,7 +4,7 @@
 
 @interface DMEnum ()
 @property(nonatomic, strong) NSString* name;
-@property(nonatomic) int ordinal;
+@property(nonatomic) NSUInteger ordinal;
 @end
 
 @implementation DMEnum
@@ -19,7 +19,7 @@ static NSMutableDictionary* alls;
     }
     Class class = object_getClass(self.class);
     unsigned protoCount;
-    Protocol *const*protocols = class_copyProtocolList(class, &protoCount);
+    Protocol *const* protocols = class_copyProtocolList(class, &protoCount);
     NSMutableArray* labels = [NSMutableArray array];
     if(protoCount >= 1) {
         unsigned methodCount;
@@ -55,11 +55,11 @@ static NSMutableDictionary* alls;
 }
 
 
-+ (instancetype)at:(int)ordinal {
-    if(ordinal < 0 || ordinal >= self.all.count) {
++ (instancetype)at:(NSUInteger)ordinal {
+    if(ordinal >= self.all.count) {
         return nil;
     }
-    return [self.all objectAtIndex:ordinal];
+    return self.all[ordinal];
 }
 
 + (instancetype)for:(id)identifier {
@@ -72,7 +72,7 @@ static NSMutableDictionary* alls;
     return nil;
 }
 
-- (instancetype)initWithName:(NSString*)name andOrdinal:(int)ordinal {
+- (instancetype)initWithName:(NSString*)name andOrdinal:(NSUInteger)ordinal {
     if(self=[super init]) {
         self.name = name;
         self.ordinal = ordinal;
@@ -81,7 +81,7 @@ static NSMutableDictionary* alls;
 }
 
 -(int)intValue {
-    return self.ordinal;
+    return (int)self.ordinal;
 }
 
 @end

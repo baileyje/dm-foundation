@@ -20,7 +20,7 @@
     return self;
 }
 
-+ (DMAsyncBlockOperation*)operationWith:(DMCallback)task {
++ (DMAsyncBlockOperation*)operationWith:(DMAsyncTask)task {
     return [self operationWith:task cancelHandle:nil];
 }
 

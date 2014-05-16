@@ -3,5 +3,5 @@
 
 @interface NSDictionary (Iterate)
 - (void)each:(DMKeyedTask)task;
-- (void)map:(DMTransform)transform;
+- (NSDictionary*)map:(DMTransform)transform;
 @end
