@@ -3,6 +3,10 @@
 
 @implementation NSData (Encode)
 
+- (NSString*)hex {
+    return self.hexEncode;
+}
+
 - (NSString*)hexEncode {
     static const unsigned char* alphabet = "0123456789ABCDEF";
     unsigned char* encoded = malloc(sizeof(unsigned char*) * self.length * 2);
@@ -12,6 +16,10 @@
         encoded[i * 2 + 1] = alphabet[bytes[i] & 15];
     }
     return [[NSString alloc] initWithBytesNoCopy:encoded length:self.length * 2 encoding:NSASCIIStringEncoding freeWhenDone:YES];
+}
+
+- (NSString*)b64 {
+    return self.b64Encode;
 }
 
 - (NSString*)b64Encode {
