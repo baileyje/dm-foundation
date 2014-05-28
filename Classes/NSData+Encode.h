@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (Encode)
-- (NSString*)hex;
+- (NSString*)hexEncode;
+- (NSString*)b64Encode;
 @end

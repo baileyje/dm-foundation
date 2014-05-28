@@ -12,6 +12,7 @@
 		146D19F81909A3FE0079D7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146D19E81909A3FE0079D7AD /* Foundation.framework */; };
 		146D19FD1909A3FE0079D7AD /* libDMFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146D19E51909A3FE0079D7AD /* libDMFoundation.a */; };
 		35CDF03B1659BD9C35CCA034 /* NSString+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF8A415E1CAC75586FF23 /* NSString+Digest.m */; };
+		35CDF0F012412081D14391B4 /* NSString+Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF7CD8BD24733F984A403 /* NSString+Decode.m */; };
 		35CDF18297425AAE36A1360F /* NSDictionary+Derive.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF692B38A11D9998DF011 /* NSDictionary+Derive.m */; };
 		35CDF19C9F6D839BA33EC3C2 /* DMAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF753F46E48C0E65357F7 /* DMAsyncBlockOperation.m */; };
 		35CDF1F82164AC2A76EA629E /* DMEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4D22F8712B98BFF69F5 /* DMEnum.m */; };
@@ -35,6 +36,7 @@
 		35CDFC1113901DC2D0F51618 /* NSData+Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF60DEEB7DB0CBC5357D6 /* NSData+Crypto.m */; };
 		35CDFC1EFC6EC1B8EB46F0E9 /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF87882181349E5553CBC /* NSMutableArray+Queue.m */; };
 		35CDFC8FC125266764CE2599 /* NSSet+Iterate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF2385C11FFACB9448D07 /* NSSet+Iterate.m */; };
+		35CDFDA76117B65750281E51 /* NSString+Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF7CD8BD24733F984A403 /* NSString+Decode.m */; };
 		35CDFDE187026EEAF160AB11 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF2EA1D8511AD17EF5048 /* NSDate+Format.m */; };
 		35CDFE275DA0B247B7E7869A /* NSData+Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFCB42F32279C517784DC /* NSData+Digest.m */; };
 		35CDFF4C067B91772F50D888 /* NSData+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFB8635EBC6BAB59174C9 /* NSData+Encode.m */; };
@@ -81,6 +83,7 @@
 		35CDF426CE641BFDE179CEB1 /* NSDictionary+Iterate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Iterate.m"; sourceTree = "<group>"; };
 		35CDF4654471440AE0B79A73 /* NSArray+Iterate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Iterate.m"; sourceTree = "<group>"; };
 		35CDF4D22F8712B98BFF69F5 /* DMEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMEnum.m; sourceTree = "<group>"; };
+		35CDF4F7B390ABC5AAFAFA76 /* NSString+Decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Decode.h"; sourceTree = "<group>"; };
 		35CDF573854AF1098F90C80E /* NSArray+Iterate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Iterate.h"; sourceTree = "<group>"; };
 		35CDF60DEEB7DB0CBC5357D6 /* NSData+Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Crypto.m"; sourceTree = "<group>"; };
 		35CDF621EC8A9396F4604D91 /* NSArray+Derive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Derive.h"; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		35CDF64214F0759663C0D8CF /* DMFoundationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMFoundationTests.m; sourceTree = "<group>"; };
 		35CDF692B38A11D9998DF011 /* NSDictionary+Derive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Derive.m"; sourceTree = "<group>"; };
 		35CDF753F46E48C0E65357F7 /* DMAsyncBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAsyncBlockOperation.m; sourceTree = "<group>"; };
+		35CDF7CD8BD24733F984A403 /* NSString+Decode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Decode.m"; sourceTree = "<group>"; };
 		35CDF83856C4943BC8FBA402 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
 		35CDF87882181349E5553CBC /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
 		35CDF8A415E1CAC75586FF23 /* NSString+Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Digest.m"; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				35CDF63100E000DEAD50328D /* NSMutableArray+Stack.h */,
 				35CDF87882181349E5553CBC /* NSMutableArray+Queue.m */,
 				35CDFDD70075EC800F94E9FE /* NSMutableArray+Queue.h */,
+				35CDF7CD8BD24733F984A403 /* NSString+Decode.m */,
+				35CDF4F7B390ABC5AAFAFA76 /* NSString+Decode.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				35CDFC1113901DC2D0F51618 /* NSData+Crypto.m in Sources */,
 				35CDF5BAF9993C9B2C1B04B7 /* NSMutableArray+Stack.m in Sources */,
 				35CDFC1EFC6EC1B8EB46F0E9 /* NSMutableArray+Queue.m in Sources */,
+				35CDFDA76117B65750281E51 /* NSString+Decode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 				35CDF37FD3444BF0BEC33DC2 /* NSDictionary+Iterate.m in Sources */,
 				35CDFF901FEE3FDEB1B3B89E /* NSSet+Iterate.m in Sources */,
 				35CDF03B1659BD9C35CCA034 /* NSString+Digest.m in Sources */,
+				35CDF0F012412081D14391B4 /* NSString+Decode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,12 +465,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DMFoundation/DMFoundation-Prefix.pch";
+				GCC_PREFIX_HEADER = "DMFoundation-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DMFoundationTests/DMFoundationTests-Info.plist";
+				INFOPLIST_FILE = "Tests/DMFoundationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -477,8 +485,8 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DMFoundation/DMFoundation-Prefix.pch";
-				INFOPLIST_FILE = "DMFoundationTests/DMFoundationTests-Info.plist";
+				GCC_PREFIX_HEADER = "DMFoundation-Prefix.pch";
+				INFOPLIST_FILE = "Tests/DMFoundationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
