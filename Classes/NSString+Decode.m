@@ -11,7 +11,6 @@
         16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 10, 11, 12, 13, 14, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
         16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,
     };
-    if(self.length % 2) return nil;
     unsigned const char* chars = [self dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES].bytes;
     unsigned char* decoded = malloc(sizeof(unsigned char) * self.length / 2);
     NSUInteger decodedPosition = 0;

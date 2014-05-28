@@ -9,7 +9,7 @@
 
 - (id)pop {
     id value = self.peek;
-    [self removeLastObject];
+    if(self.count) [self removeLastObject];
     return value;
 }
 

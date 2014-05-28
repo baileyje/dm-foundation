@@ -17,7 +17,7 @@
         free(buffer);
         return nil;
     }
-    return [NSData dataWithBytesNoCopy:buffer length:bytesTransformed];
+    return [NSData dataWithBytesNoCopy:buffer length:bytesTransformed freeWhenDone:YES];
 }
 
 - (NSData*)aesEncrypt:(NSData*)key {

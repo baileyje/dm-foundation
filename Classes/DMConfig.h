@@ -7,6 +7,6 @@
 
 - (instancetype)initWithName:(NSString*)name;
 
-- (id)objectForKeyedSubscript:(id <NSCopying>)key;
+- (id)objectForKeyedSubscript:(NSString*)key;
 
 @end

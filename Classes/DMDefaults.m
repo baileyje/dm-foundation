@@ -23,11 +23,11 @@
     return self;
 }
 
-- (id)objectForKeyedSubscript:(id <NSCopying>)key {
+- (id)objectForKeyedSubscript:(id)key {
     return [self.defaults objectForKey:key];
 }
 
-- (void)setObject:(id)object forKeyedSubscript:(id <NSCopying>)key {
+- (void)setObject:(id)object forKeyedSubscript:(id)key {
     if(object != nil) {
         [self.defaults setObject:object forKey:key];
     } else {

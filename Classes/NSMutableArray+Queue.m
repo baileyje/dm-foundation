@@ -8,8 +8,8 @@
 }
 
 - (id)dequeue {
-    id item = [self firstObject];
-    [self removeObjectAtIndex:0];
+    id item = self.poll;
+    if(self.count) [self removeObjectAtIndex:0];
     return item;
 }
 
