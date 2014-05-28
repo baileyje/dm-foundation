@@ -42,6 +42,8 @@
 		35CDFF4C067B91772F50D888 /* NSData+Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFB8635EBC6BAB59174C9 /* NSData+Encode.m */; };
 		35CDFF6E15F36BCFF9334AAC /* DMEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF4D22F8712B98BFF69F5 /* DMEnum.m */; };
 		35CDFF901FEE3FDEB1B3B89E /* NSSet+Iterate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF2385C11FFACB9448D07 /* NSSet+Iterate.m */; };
+		88BE25A12C006ED8361D684D /* DMConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE26B73A30D567C032027A /* DMConfig.m */; };
+		88BE25B34751BBA39B489B1D /* DMDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BE2F01AF2E4921D123AEE7 /* DMDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,11 @@
 		35CDFE9CC8F3943D53A4A0C6 /* DMFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = file.podspec; path = DMFoundation.podspec; sourceTree = "<group>"; };
 		35CDFFB3E9ED24B0216B90BB /* NSString+Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Digest.h"; sourceTree = "<group>"; };
 		35CDFFED7B12D508BCFF4A7C /* NSDictionary+Iterate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Iterate.h"; sourceTree = "<group>"; };
+		88BE24EFE292085395FEE8A6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		88BE26B73A30D567C032027A /* DMConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMConfig.m; sourceTree = "<group>"; };
+		88BE26BE01DB93E9B1E5DB8B /* DMConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMConfig.h; sourceTree = "<group>"; };
+		88BE2F01AF2E4921D123AEE7 /* DMDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDefaults.m; sourceTree = "<group>"; };
+		88BE2FC9DB2802DE251741EC /* DMDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDefaults.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +149,7 @@
 				35CDF92BF37BE03160754FE6 /* Tests */,
 				35CDF2F8677CC8AACC946DD9 /* DMFoundation-Prefix.pch */,
 				35CDFE9CC8F3943D53A4A0C6 /* DMFoundation.podspec */,
+				88BE24EFE292085395FEE8A6 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +207,10 @@
 				35CDFDD70075EC800F94E9FE /* NSMutableArray+Queue.h */,
 				35CDF7CD8BD24733F984A403 /* NSString+Decode.m */,
 				35CDF4F7B390ABC5AAFAFA76 /* NSString+Decode.h */,
+				88BE2FC9DB2802DE251741EC /* DMDefaults.h */,
+				88BE2F01AF2E4921D123AEE7 /* DMDefaults.m */,
+				88BE26BE01DB93E9B1E5DB8B /* DMConfig.h */,
+				88BE26B73A30D567C032027A /* DMConfig.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -319,6 +331,8 @@
 				35CDF5BAF9993C9B2C1B04B7 /* NSMutableArray+Stack.m in Sources */,
 				35CDFC1EFC6EC1B8EB46F0E9 /* NSMutableArray+Queue.m in Sources */,
 				35CDFDA76117B65750281E51 /* NSString+Decode.m in Sources */,
+				88BE25B34751BBA39B489B1D /* DMDefaults.m in Sources */,
+				88BE25A12C006ED8361D684D /* DMConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
