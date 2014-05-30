@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name = 'DMFoundation'
-  spec.version = '0.1.0'
+  spec.version = '0.1.1'
   spec.summary = 'A collection of utilities and enhancements to the iOS runtime environment.'
   spec.description = <<-DESC
     DMFoundation is a collection of category-based enhancements to the iOS Foundation classes

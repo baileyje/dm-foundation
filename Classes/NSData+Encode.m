@@ -24,7 +24,7 @@
 
 - (NSString*)b64Encode {
     static const unsigned char* alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-    const char* data = [self bytes];
+    const unsigned char* data = [self bytes];
     unsigned char* encoding = malloc(sizeof(char) * (NSUInteger)ceil(self.length / 3.0) * 4 + self.length / 76 * 2);
     NSUInteger position = 0;
     for(NSUInteger i = 2; i < self.length; i += 3) {
