@@ -20,26 +20,32 @@ static NSMutableDictionary* alls;
     Class class = object_getClass(self.class);
     unsigned protoCount;
     Protocol *const* protocols = class_copyProtocolList(class, &protoCount);
-    NSMutableArray* labels = [NSMutableArray array];
-    if(protoCount >= 1) {
-        unsigned methodCount;
-        struct objc_method_description *methods = protocol_copyMethodDescriptionList(protocols[0], YES, NO, &methodCount);
-        for(unsigned i = 0; i < methodCount; i++) {
-            NSString* label = NSStringFromSelector(methods[i].name);
-            [labels addObject:label];
+    if(protocols) {
+        NSMutableArray* labels = [NSMutableArray array];
+        if(protoCount >= 1) {
+            unsigned methodCount;
+            struct objc_method_description* methods = protocol_copyMethodDescriptionList(protocols[0], YES, NO, &methodCount);
+            if(methods) {
+                for(unsigned i = 0; i < methodCount; i++) {
+                    NSString* label = NSStringFromSelector(methods[i].name);
+                    [labels addObject:label];
+                }
+                free(methods);
+            }
         }
+        [labels sortUsingSelector:@selector(localizedCompare:)];
+        NSMutableArray* temp = [NSMutableArray array];
+        for(NSString* label in labels) {
+            DMEnum* it = [[self alloc] initWithName:[self nameFor:label] andOrdinal:temp.count];
+            IMP accessor = imp_implementationWithBlock(^() {
+                return it;
+            });
+            class_addMethod(object_getClass(self.class), NSSelectorFromString(label), accessor, "@#:");
+            [temp addObject:it];
+        }
+        alls[NSStringFromClass(self.class)] = [NSArray arrayWithArray:temp];
+        free((void*)protocols);
     }
-    [labels sortUsingSelector:@selector(localizedCompare:)];
-    NSMutableArray* temp = [NSMutableArray array];
-    for(NSString* label in labels) {
-        DMEnum* it = [[self alloc] initWithName:[self nameFor:label] andOrdinal:temp.count];
-        IMP accessor = imp_implementationWithBlock(^() {
-            return it;
-        });
-        class_addMethod(object_getClass(self.class), NSSelectorFromString(label), accessor, "@#:");
-        [temp addObject:it];
-    }
-    alls[NSStringFromClass(self.class)] = [NSArray arrayWithArray:temp];
 }
 
 + (NSString*)nameFor:(NSString*)label {
